@@ -1,0 +1,250 @@
+@media screen and (max-width: 820px) {
+  .nav-header {
+    > img {
+      width: 7rem;
+      height: 3rem;
+    }
+    
+    > main {
+      margin-left: 1rem;
+    }
+  }
+  .home-div {
+    p {
+      margin-top: -12rem;
+      display: none;
+    }
+  }
+
+  .home {
+    > main {
+      > h1 {
+        margin-top: -7rem;
+      }
+    }
+  }
+
+  .home2 {
+    > img {
+      margin: -18rem 0 0 7rem;
+      animation: imgUp 0.7s linear infinite alternate;
+    }
+    > div {
+      > p {
+        font-size: 0.7rem;
+        margin: -19rem 16rem 0 0;
+      }
+    }
+  }
+
+  @keyframes imgUp {
+    to {
+      transform: translateY(-12px);
+    }
+  }
+
+  .home3 {
+    margin-top: -35rem;
+
+    > div {
+      > img {
+        width: 15rem;
+        margin-bottom: 1rem;
+        animation: ImgUp 0.7s linear infinite alternate;
+      }
+      > div {
+        > p {
+          letter-spacing: 2px;
+          word-spacing: 3px;
+          font: 600 1.2rem;
+          padding-left: 1rem;
+        }
+        > table {
+          padding-left: 3rem;
+        }
+      }
+    }
+  }
+  @keyframes ImgUp {
+    to {
+      transform: translate(22px);
+    }
+  }
+
+  .home4 {
+    height: 130vh;
+    > div {
+      height: 70vh;
+    }
+  }
+
+  .contact > main {
+    margin-top: -30rem;
+    height: 80vh;
+    width: 100%;
+    border-radius: 0%;
+
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  margin-top: -12rem;
+
+  width: 100%;
+  max-height: 25vh;
+  display: flex;
+  gap: 3rem;
+  > div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -5rem;
+    margin-left: -1px;
+    margin-right: -5rem;
+    margin-left: 1rem;
+    > img {
+      width: 10rem;
+      padding-bottom: 2px;
+      padding-right: 1rem;
+    }
+    > p {
+      font-size: 1rem;
+      margin: -2rem 0 0 -5rem;
+    }
+    > h5 {
+      font-size: 1.7rem;
+    }
+    > div {
+      a {
+        margin: 0 -5rem 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    > h1 {
+      display: none;
+    }
+    > main {
+      width: 100%;
+      justify-content: center;
+      a {
+        margin: 0.5rem;
+      }
+    }
+  }
+
+  .home > main {
+    align-items: center;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .home2 {
+    display: none;
+    height: 120vh;
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+    > div {
+      width: 100%;
+    }
+  }
+
+  .home4 {
+    height: 120vh;
+    > div {
+      text-align: center;
+      width: 100%;
+      border-radius: 0;
+      > p {
+        padding: 5rem 2rem;
+        font-size: 0.9rem;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .home3 {
+    align-items: center;
+    > div {
+      display: flex;
+      flex-direction: column;
+      border-radius: 0%;
+      width: 100%;
+      height: unset;
+    }
+  }
+  .contact {
+    height: 30rem;
+    margin-bottom: 5rem;
+    > main {
+      height: 28rem;
+      padding: 1rem;
+
+      h1 {
+        margin: 0 0 2rem -1rem;
+      }
+      > form {
+        margin-top: -1rem;
+
+        > div {
+          width: 19rem;
+        }
+      }
+    }
+  }
+
+  .booking {
+    margin-bottom: 12rem;
+
+    > main {
+      width: 100%;
+      height: 47rem;
+      margin-top: 0.5rem;
+
+      > h1 {
+        margin-top: 2rem;
+      }
+
+      > form {
+        margin-top: 2rem;
+
+        > div {
+          text-align: center;
+          display: flex;
+          gap: 2rem;
+          > label {
+            margin: 0 2rem 0 -6rem;
+          }
+
+          > input {
+            width: 14rem;
+            margin-right: -5rem;
+          }
+
+          > button {
+            margin-right: -2rem;
+            padding: 0.7rem 3rem;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    height: 60vh;
+    grid-template-columns: 1fr;
+    padding: 5rem;
+    > div {
+      align-items: center;
+    }
+  }
+}
